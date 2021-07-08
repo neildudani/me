@@ -2,8 +2,9 @@
   "homepage": "https://neildudani.github.io/me",
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
-    "build": "npx webpack -w"
+    "deploy": "gh-pages -d client/dist",
+    "build": "npx webpack",
+    "development-build": "npx webpack -w"
   },
   "dependencies": {
     "@babel/core": "^7.14.6",
