@@ -1,9 +1,8 @@
 {
-  "homepage": "http://neildudani.github.io/me",
+  "homepage": "https://neildudani.github.io/me",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "start": "nodemon server/index.js",
     "build": "npx webpack -w"
   },
   "dependencies": {
