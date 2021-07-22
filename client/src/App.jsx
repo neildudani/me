@@ -1,12 +1,18 @@
 import React, { useState, useEffect } from 'react';
 import ReactDOM from 'react-dom';
+import Navbar from './components/Navbar.jsx';
+import BannerArea from './components/BannerArea.jsx';
+import About from './components/About.jsx';
+import Projects from './components/Projects.jsx';
 
 const App = () => {
 
   return (
     <div>
-      <h1>Hello World</h1>
-      <h2>Goodbye World</h2>
+      <Navbar />
+      <BannerArea />
+      <About />
+      <Projects />
     </div>
   )
 
