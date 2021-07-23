@@ -29,7 +29,7 @@ h1, h2, h3, h4, h5, h6 {
   --roboto: 'Roboto', sans-serif;
 }
 
-/* Header Area */
+/* NavBar Area */
 .header_area {
   position: fixed;
   width: 100%;
@@ -71,8 +71,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Banner Area */
+
 .site-main {
-  padding-top: 15%;
+  padding-top: 8%;
   padding-bottom: 12%;
 }
 
@@ -80,21 +81,29 @@ h1, h2, h3, h4, h5, h6 {
   padding-top: 7%;
   font-weight: 500;
   margin-left: 40%;
+  font-size: 4vw;
 }
 
 .site-main .site-banner .site-title h1{
-  font-size: 5rem;
+  font-size: 5.8vw;
   margin-left: 40%;
 }
 
 .site-main .site-banner .site-title h4{
-  font-size: 1.5rem;
+  font-size: 1.5vw;
 }
 
-.site-main .site-banner .banner-image > img{
-  width: 18rem;
-  margin-right: 10%;
+.site-main .site-banner .banner-image > img {
+  width: 18vw;
+  height: 18vw;
   border-radius: 50%;
+  margin-right: 25%;
+  margin-top: 7%;
+}
+
+.banner-image {
+  display: flex;
+  justify-content: center;
 }
 
 .button {
@@ -193,6 +202,7 @@ h1, h2, h3, h4, h5, h6 {
 .project_area {
   margin-left: 10%;
   margin-right: 10%;
+  padding-top: 8%;
 }
 
 .col-sm-4 {
@@ -263,11 +273,10 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
   text-align: center;
   -webkit-animation: arrow 0.5s 1.5s infinite ease-out alternate;
-  cursor: pointer;
 }
 
 .separatorA:hover{
-   -webkit-animation-play-state: paused;
+  cursor: pointer;
 }
 
 @-webkit-keyframes arrow{
@@ -275,16 +284,20 @@ h1, h2, h3, h4, h5, h6 {
     bottom:0px;
   }
   100%{
-    bottom:40px;
+    bottom:20px;
   }
+}
+
+.text-separatorA {
+  font-size: 3vw;
 }
 
 
 /* SeparatorB */
 
 .separatorB {
-  margin-top: 3rem;
-  margin-bottom: 3rem;
+  margin-top: 3vw;
+  margin-bottom: 1vw;
 }
 
 .dots {
@@ -295,3 +308,44 @@ h1, h2, h3, h4, h5, h6 {
   margin: auto;
 }
 
+/* Responsiveness */
+
+@media only screen and (max-width: 991px) {
+
+  .site-main .site-banner .banner-image > img {
+    width: 20vw;
+    height: 20vw;
+    border-radius: 50%;
+    margin-top: 0%;
+    margin: auto;
+    vertical-align: middle;
+  }
+
+  .button.linkedin-button {
+    margin-left: 0%;
+  }
+
+  .flex-row {
+    justify-content: center;
+    margin-bottom: 2%;
+  }
+
+  .site-main .site-banner .site-title h3 {
+    padding-top: 7%;
+    font-weight: 500;
+    text-align: center;
+    margin: auto;
+    font-size: 5vw;
+  }
+
+  .site-main .site-banner .site-title h1 {
+    text-align: center;
+    margin: auto;
+    font-size: 6vw;
+  }
+
+  .card {
+    padding: 0.75rem;
+  }
+
+}

@@ -10,7 +10,7 @@ import Projects from './components/Projects.jsx';
 const App = () => {
 
   return (
-    <div>
+    <div class="app-container">
       <Navbar />
       <BannerArea />
       <SeparatorA />

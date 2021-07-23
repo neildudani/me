@@ -24,7 +24,7 @@ const About = () => {
       <h1 class="section-header">About</h1>
       <div class="about-question-container" onClick={toggleWhoAmI}>
         <i class="fas fa-user fa-2x question-icon"></i>
-        <h2 class="about-question-title who-am-i">A Little Bit About Me</h2>
+        <h2 class="about-question-title who-am-i">A Little About Me</h2>
       </div>
       {whoAmI && <p class="about-content">I was born and raised in Ottawa, Canada, and am currently pursuing my MBA from the Kellogg School of Management in Evanston, Illinois, where I am hoping to transition to a career in product management.
       </p>}
