@@ -73,8 +73,6 @@ const About = () => {
               <li>PowerPoint</li>
             </td>
           </tr>
-          <tr>
-          </tr>
         </tbody>
       </table>}
     </div>

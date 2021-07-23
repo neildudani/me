@@ -3,8 +3,8 @@ html, body {
   box-sizing: border-box;
   width: 100%;
   height: 100%;
-  background-color: #aab6cc;
-  background-image: url("https://www.transparenttextures.com/patterns/brick-wall.png");
+  background-color: #fefaf6;
+  background-image: url("https://www.transparenttextures.com/patterns/white-brick-wall.png");
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -20,7 +20,6 @@ h1, h2, h3, h4, h5, h6 {
 
 :root {
   --primary-color: #0ca080;
-  --primary-color2:  #0ca080;
   --title-color: #141313;
   --text-color: #777777;
   --border-color: #201f1f17;
@@ -33,9 +32,9 @@ h1, h2, h3, h4, h5, h6 {
 /* Header Area */
 .header_area {
   position: fixed;
-  background-color: rgb(199, 204, 226);
   width: 100%;
-  z-index: 10;
+  z-index: 1000;
+  background: #fefaf6;
 }
 
 .header_area .main-menu .navbar .navbar-brand {
@@ -67,9 +66,14 @@ h1, h2, h3, h4, h5, h6 {
   background-clip: text;
 }
 
+.main-menu {
+  border-bottom: 0.2rem solid var(--primary-color);
+}
+
 /* Banner Area */
 .site-main {
-  padding-top: 7%;
+  padding-top: 15%;
+  padding-bottom: 12%;
 }
 
 .site-main .site-banner .site-title h3{
@@ -132,10 +136,14 @@ h1, h2, h3, h4, h5, h6 {
   border-color: #171515;
 }
 
+.name {
+  color: var(--primary-color);
+}
+
 /* About */
 .about_area {
-  margin: 0% 10% 0% 10%;
-  padding-top: 7%;
+  margin: 5% 10% 5% 10%;
+  padding-top: 8%;
 }
 
 .about-question-container {
@@ -148,7 +156,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .about-question-container:hover {
   cursor: pointer;
-  background-color: var(--primary-color2);
+  background-color: rgb(134, 186, 166);
 }
 
 .about-question-title {
@@ -167,8 +175,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .skills-table {
-  table-layout: fixed;
+  table-layout: auto;
   margin-left: 5%;
+  max-width: 500px;
 }
 
 .who-am-i {
@@ -247,9 +256,33 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: 2px;
 }
 
-/* Separator */
+/* SeparatorA */
 
-.separator {
+.separatorA {
+  display: block;
+  position: relative;
+  text-align: center;
+  -webkit-animation: arrow 0.5s 1.5s infinite ease-out alternate;
+  cursor: pointer;
+}
+
+.separatorA:hover{
+   -webkit-animation-play-state: paused;
+}
+
+@-webkit-keyframes arrow{
+  0% {
+    bottom:0px;
+  }
+  100%{
+    bottom:40px;
+  }
+}
+
+
+/* SeparatorB */
+
+.separatorB {
   margin-top: 3rem;
   margin-bottom: 3rem;
 }
@@ -261,3 +294,4 @@ h1, h2, h3, h4, h5, h6 {
   display: block;
   margin: auto;
 }
+

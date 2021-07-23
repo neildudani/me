@@ -3,7 +3,8 @@ import ReactDOM from 'react-dom';
 import Navbar from './components/Navbar.jsx';
 import BannerArea from './components/BannerArea.jsx';
 import About from './components/About.jsx';
-import Separator from './components/Separator.jsx';
+import SeparatorA from './components/SeparatorA.jsx';
+import SeparatorB from './components/SeparatorB.jsx';
 import Projects from './components/Projects.jsx';
 
 const App = () => {
@@ -12,8 +13,9 @@ const App = () => {
     <div>
       <Navbar />
       <BannerArea />
+      <SeparatorA />
       <About />
-      <Separator />
+      <SeparatorB />
       <Projects />
     </div>
   )

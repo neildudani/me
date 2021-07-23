@@ -1,14 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import ReactDOM from 'react-dom';
 
-const Separator = () => {
+const SeparatorB = () => {
 
   return (
-  <section class="separator">
+  <section class="separatorB">
     <hr class="dots"></hr>
   </section>
   )
 
 };
 
-export default Separator;
+export default SeparatorB;
