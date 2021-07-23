@@ -24,9 +24,9 @@ const About = () => {
       <h1 class="section-header">About</h1>
       <div class="about-question-container" onClick={toggleWhoAmI}>
         <i class="fas fa-user fa-2x question-icon"></i>
-        <h2 class="about-question-title who-am-i">A Little Bit About Me</h2>
+        <h2 class="about-question-title who-am-i">A Little About Me</h2>
       </div>
-      {whoAmI && <p class="about-content">I was born and raised in Ottawa, Canada and am currently pursuing my MBA from the Kellogg School of Management in Evanston, Illinois, where I am hoping to transition to a career in product management.
+      {whoAmI && <p class="about-content">I was born and raised in Ottawa, Canada, and am currently pursuing my MBA from the Kellogg School of Management in Evanston, Illinois, where I am hoping to transition to a career in product management.
       </p>}
       {whoAmI && <p class="about-content">Prior to moving to the United States, I completed my undergraduate Commerce degree from the Smith School of Business at Queen's University and spent time in Toronto working in management consulting and data analytics at <a href="https://www.level5strategy.com/">Level5 Strategy</a> and Capital One, respectively.
       </p>}
@@ -72,8 +72,6 @@ const About = () => {
               <li>Excel</li>
               <li>PowerPoint</li>
             </td>
-          </tr>
-          <tr>
           </tr>
         </tbody>
       </table>}

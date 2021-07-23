@@ -11,7 +11,7 @@ const BannerArea = () => {
             <div class="row">
                 <div class="col-lg-6 col-md-12 site-title">
                   <h3 class="title-text">Hey There!</h3>
-                  <h1 class="title-text text">I am Neil</h1>
+                  <h1 class="title-text text">I am <span class="name">Neil</span></h1>
                   <div class="site-buttons">
                     <div class="d-flex flex-row flex-wrap">
                         <button type="button" class="btn button linkedin-button mr-4" onClick={()=> window.open('https://www.linkedin.com/in/neil-dudani/', '_blank')}>

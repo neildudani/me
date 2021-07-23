@@ -3,23 +3,40 @@ html, body {
   box-sizing: border-box;
   width: 100%;
   height: 100%;
+  background-color: #fefaf6;
+  background-image: url("https://www.transparenttextures.com/patterns/white-brick-wall.png");
 }
+
+h1, h2, h3, h4, h5, h6 {
+  -webkit-font-smoothing: antialiased;
+  /*-- Gives higher resolution/smoother fonts */
+  text-rendering: optimizeLegibility;
+  /*-- Gives higher resolution/smoother fonts */
+  font-weight: bold;
+}
+
 
 /* CSS VARIABLES */
 
 :root {
-  --primary-color: #2bb290;
-  --primary-color2:  #c1efe4f4;
+  --primary-color: #0ca080;
   --title-color: #141313;
   --text-color: #777777;
   --border-color: #201f1f17;
-  --gradient-color: linear-gradient(90deg, #2bb290 0%, #7de2c9 100%);
+  --gradient-color: linear-gradient(90deg, #0ca080 0%, #0ca080 100%);
   --shadow-color:  0px 10px 30px rgba(118, 85, 225, 0.3);
   --box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.205);
   --roboto: 'Roboto', sans-serif;
 }
 
-/* Header Area */
+/* NavBar Area */
+.header_area {
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  background: #fefaf6;
+}
+
 .header_area .main-menu .navbar .navbar-brand {
   padding: 0 2rem 0 5rem;
 }
@@ -49,31 +66,44 @@ html, body {
   background-clip: text;
 }
 
+.main-menu {
+  border-bottom: 0.2rem solid var(--primary-color);
+}
+
 /* Banner Area */
 
 .site-main {
-  margin-bottom: 2rem;
+  padding-top: 8%;
+  padding-bottom: 12%;
 }
 
 .site-main .site-banner .site-title h3{
   padding-top: 7%;
   font-weight: 500;
   margin-left: 40%;
+  font-size: 4vw;
 }
 
 .site-main .site-banner .site-title h1{
-  font-size: 5rem;
+  font-size: 5.8vw;
   margin-left: 40%;
 }
 
 .site-main .site-banner .site-title h4{
-  font-size: 1.5rem;
+  font-size: 1.5vw;
 }
 
-.site-main .site-banner .banner-image > img{
-  width: 18rem;
-  margin-right: 10%;
+.site-main .site-banner .banner-image > img {
+  width: 18vw;
+  height: 18vw;
   border-radius: 50%;
+  margin-right: 25%;
+  margin-top: 7%;
+}
+
+.banner-image {
+  display: flex;
+  justify-content: center;
 }
 
 .button {
@@ -115,9 +145,14 @@ html, body {
   border-color: #171515;
 }
 
+.name {
+  color: var(--primary-color);
+}
+
 /* About */
 .about_area {
-  margin: 5% 10% 3% 10%;
+  margin: 5% 10% 5% 10%;
+  padding-top: 8%;
 }
 
 .about-question-container {
@@ -130,14 +165,14 @@ html, body {
 
 .about-question-container:hover {
   cursor: pointer;
-  background-color: var(--primary-color2);
+  background-color: rgb(134, 186, 166);
 }
 
 .about-question-title {
-  font-size: 18px;
+  font-size: 1.5rem;
   margin-left: 1%;
   margin-top: 2em;
-  font-weight: 700;
+  font-weight: 600;
   text-transform: uppercase;
   position: relative;
   display: inline;
@@ -149,8 +184,9 @@ html, body {
 }
 
 .skills-table {
-  table-layout: fixed;
+  table-layout: auto;
   margin-left: 5%;
+  max-width: 500px;
 }
 
 .who-am-i {
@@ -166,6 +202,7 @@ html, body {
 .project_area {
   margin-left: 10%;
   margin-right: 10%;
+  padding-top: 8%;
 }
 
 .col-sm-4 {
@@ -176,8 +213,8 @@ html, body {
 .card-body {
   min-width: 18rem;
   max-width: 18rem;
-  min-height: 12rem;
-  max-height: 12rem;
+  min-height: 14rem;
+  max-height: 14rem;
 }
 
 .card {
@@ -187,6 +224,9 @@ html, body {
   margin-bottom: 30px;
   -webkit-box-shadow: 0px 0px 56px -8px rgba(0, 0, 0, 0.17);
   box-shadow: 0px 0px 56px -8px rgba(0, 0, 0, 0.17);
+  border-bottom: 2px solid var(--primary-color);
+  border-color: var(--primary-color);
+  background-color: var(--primary-color);
 }
 
 .card-title {
@@ -196,26 +236,10 @@ html, body {
 }
 
 .card-text {
-  font: normal 500 16px/16px var(--roboto);
+  font: normal 500 20px/24px var(--roboto);
   color: whitesmoke;
-}
-
-.first-card {
-  border-bottom: 2px solid #2bb290;
-  border-color: #2bb290;
-  background-color: #2bb290;
-}
-
-.second-card {
-  border-bottom: 2px solid #2bb290;
-  border-color: #2bb290;
-  background-color: #2bb290;
-}
-
-.third-card {
-  border-bottom: 2px solid #2bb290;
-  border-color: #2bb290;
-  background-color: #2bb290;
+  min-height: 7rem;
+  max-height: 7rem;
 }
 
 .github-mini {
@@ -240,4 +264,88 @@ html, body {
   text-transform: uppercase;
   font: normal 500 30px var(--roboto);
   letter-spacing: 2px;
+}
+
+/* SeparatorA */
+
+.separatorA {
+  display: block;
+  position: relative;
+  text-align: center;
+  -webkit-animation: arrow 0.5s 1.5s infinite ease-out alternate;
+}
+
+.separatorA:hover{
+  cursor: pointer;
+}
+
+@-webkit-keyframes arrow{
+  0% {
+    bottom:0px;
+  }
+  100%{
+    bottom:20px;
+  }
+}
+
+.text-separatorA {
+  font-size: 3vw;
+}
+
+
+/* SeparatorB */
+
+.separatorB {
+  margin-top: 3vw;
+  margin-bottom: 1vw;
+}
+
+.dots {
+  border-bottom: 15px dotted black;
+  background-color: transparent;
+  width: 20vw;
+  display: block;
+  margin: auto;
+}
+
+/* Responsiveness */
+
+@media only screen and (max-width: 991px) {
+
+  .site-main .site-banner .banner-image > img {
+    width: 20vw;
+    height: 20vw;
+    border-radius: 50%;
+    margin-top: 0%;
+    margin: auto;
+    vertical-align: middle;
+  }
+
+  .button.linkedin-button {
+    margin-left: 0%;
+  }
+
+  .flex-row {
+    justify-content: center;
+    margin-bottom: 2%;
+  }
+
+  .site-main .site-banner .site-title h3 {
+    padding-top: 7%;
+    font-weight: 500;
+    text-align: center;
+    margin: auto;
+    font-size: 5vw;
+  }
+
+  .site-main .site-banner .site-title h1 {
+    text-align: center;
+    margin: auto;
+    font-size: 6vw;
+  }
+
+  .card {
+    padding: 0.75rem;
+  }
+
 }
