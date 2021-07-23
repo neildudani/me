@@ -15,10 +15,10 @@ const BannerArea = () => {
                   <div class="site-buttons">
                     <div class="d-flex flex-row flex-wrap">
                         <button type="button" class="btn button linkedin-button mr-4" onClick={()=> window.open('https://www.linkedin.com/in/neil-dudani/', '_blank')}>
-                          <i class="fab fa-linkedin fa-2x"></i>
+                          <i class="fab fa-linkedin big-icon"></i>
                         </button>
                         <button type="button" class="btn button github-button" onClick={()=> window.open('https://github.com/neildudani', '_blank')}>
-                          <i class="fab fa-github fa-2x"></i>
+                          <i class="fab fa-github big-icon"></i>
                         </button>
                     </div>
                   </div>
