@@ -3,23 +3,41 @@ html, body {
   box-sizing: border-box;
   width: 100%;
   height: 100%;
+  background-color: #aab6cc;
+  background-image: url("https://www.transparenttextures.com/patterns/brick-wall.png");
 }
+
+h1, h2, h3, h4, h5, h6 {
+  -webkit-font-smoothing: antialiased;
+  /*-- Gives higher resolution/smoother fonts */
+  text-rendering: optimizeLegibility;
+  /*-- Gives higher resolution/smoother fonts */
+  font-weight: bold;
+}
+
 
 /* CSS VARIABLES */
 
 :root {
-  --primary-color: #2bb290;
-  --primary-color2:  #c1efe4f4;
+  --primary-color: #0ca080;
+  --primary-color2:  #0ca080;
   --title-color: #141313;
   --text-color: #777777;
   --border-color: #201f1f17;
-  --gradient-color: linear-gradient(90deg, #2bb290 0%, #7de2c9 100%);
+  --gradient-color: linear-gradient(90deg, #0ca080 0%, #0ca080 100%);
   --shadow-color:  0px 10px 30px rgba(118, 85, 225, 0.3);
   --box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.205);
   --roboto: 'Roboto', sans-serif;
 }
 
 /* Header Area */
+.header_area {
+  position: fixed;
+  background-color: rgb(199, 204, 226);
+  width: 100%;
+  z-index: 10;
+}
+
 .header_area .main-menu .navbar .navbar-brand {
   padding: 0 2rem 0 5rem;
 }
@@ -50,9 +68,8 @@ html, body {
 }
 
 /* Banner Area */
-
 .site-main {
-  margin-bottom: 2rem;
+  padding-top: 7%;
 }
 
 .site-main .site-banner .site-title h3{
@@ -117,7 +134,8 @@ html, body {
 
 /* About */
 .about_area {
-  margin: 5% 10% 3% 10%;
+  margin: 0% 10% 0% 10%;
+  padding-top: 7%;
 }
 
 .about-question-container {
@@ -134,10 +152,10 @@ html, body {
 }
 
 .about-question-title {
-  font-size: 18px;
+  font-size: 1.5rem;
   margin-left: 1%;
   margin-top: 2em;
-  font-weight: 700;
+  font-weight: 600;
   text-transform: uppercase;
   position: relative;
   display: inline;
@@ -176,8 +194,8 @@ html, body {
 .card-body {
   min-width: 18rem;
   max-width: 18rem;
-  min-height: 12rem;
-  max-height: 12rem;
+  min-height: 14rem;
+  max-height: 14rem;
 }
 
 .card {
@@ -187,6 +205,9 @@ html, body {
   margin-bottom: 30px;
   -webkit-box-shadow: 0px 0px 56px -8px rgba(0, 0, 0, 0.17);
   box-shadow: 0px 0px 56px -8px rgba(0, 0, 0, 0.17);
+  border-bottom: 2px solid var(--primary-color);
+  border-color: var(--primary-color);
+  background-color: var(--primary-color);
 }
 
 .card-title {
@@ -196,26 +217,10 @@ html, body {
 }
 
 .card-text {
-  font: normal 500 16px/16px var(--roboto);
+  font: normal 500 20px/24px var(--roboto);
   color: whitesmoke;
-}
-
-.first-card {
-  border-bottom: 2px solid #2bb290;
-  border-color: #2bb290;
-  background-color: #2bb290;
-}
-
-.second-card {
-  border-bottom: 2px solid #2bb290;
-  border-color: #2bb290;
-  background-color: #2bb290;
-}
-
-.third-card {
-  border-bottom: 2px solid #2bb290;
-  border-color: #2bb290;
-  background-color: #2bb290;
+  min-height: 7rem;
+  max-height: 7rem;
 }
 
 .github-mini {
@@ -240,4 +245,19 @@ html, body {
   text-transform: uppercase;
   font: normal 500 30px var(--roboto);
   letter-spacing: 2px;
+}
+
+/* Separator */
+
+.separator {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.dots {
+  border-bottom: 15px dotted black;
+  background-color: transparent;
+  width: 20vw;
+  display: block;
+  margin: auto;
 }
