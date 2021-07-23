@@ -55,7 +55,7 @@ const About = () => {
             <td>
               <li>JavaScript</li>
               <li>HTML</li>
-              <li>CSS (Bootstrap)</li>
+              <li>Bootstrap</li>
               <li>React</li>
               <li>Node.js</li>
               <li>Express</li>
@@ -66,7 +66,7 @@ const About = () => {
               <li>MongoDB</li>
               <li>AWS</li>
               <li>Docker</li>
-              <li>Jest, Mocha & Chai</li>
+              <li>Jest & Mocha</li>
               <li>SQL</li>
               <li>Tableau</li>
               <li>Excel</li>
