@@ -12,10 +12,10 @@ const SeparatorA = () => {
 
   return (
     <div>
-    <div class="separatorA" onClick={redirectToAbout}>
-        <i class="fas fa-arrow-circle-down fa-3x"></i>
-        <h2 class="text-separatorA"> Click to learn more about me! </h2>
-    </div>
+      <div class="separatorA" onClick={redirectToAbout}>
+          <i class="fas fa-arrow-circle-down fa-3x"></i>
+          <h2 class="text-separatorA"> Click to learn more about me! </h2>
+      </div>
     </div>
   )
 
