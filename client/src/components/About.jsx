@@ -54,7 +54,7 @@ const About = () => {
           <tr>
             <td>
               <li>JavaScript</li>
-              <li>HTML</li>
+              <li>HTML/CSS</li>
               <li>Bootstrap</li>
               <li>React</li>
               <li>Node.js</li>
